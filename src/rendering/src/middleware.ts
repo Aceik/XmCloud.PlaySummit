@@ -7,6 +7,7 @@ export default async function (req: NextRequest, ev: NextFetchEvent) {
 }
 
 export const config = {
+  runtime: 'edge',
   /*
    * Match all paths except for:
    * 1. /api routes

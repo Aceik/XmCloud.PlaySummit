@@ -5,6 +5,7 @@ import { withOcWebhookAuth } from '@ordercloud/catalyst';
 
 // withOCWebhookAuth needs the raw body in order to validate the payload is coming from ordercloud
 export const config = {
+  runtime: 'edge',
   api: {
     bodyParser: false,
   },

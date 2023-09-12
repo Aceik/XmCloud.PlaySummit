@@ -20,6 +20,7 @@ Configuration.Set({ baseApiUrl: process.env.NEXT_PUBLIC_ORDERCLOUD_BASE_API_URL 
 
 // withOCWebhookAuth needs the raw body in order to validate the payload is coming from ordercloud
 export const config = {
+  runtime: 'edge',
   api: {
     bodyParser: false,
   },

@@ -17,6 +17,7 @@ import { EditingRenderMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/editi
 // Bump body size limit (1mb by default) and disable response limit for Sitecore editor payloads
 // See https://nextjs.org/docs/api-routes/request-helpers#custom-config
 export const config = {
+  runtime: 'edge',
   api: {
     bodyParser: {
       sizeLimit: '2mb',

@@ -5,6 +5,7 @@ import { DShipEstimateResponse } from 'src/models/ordercloud/DShipEstimateRespon
 
 // withOcWebhookAuth needs the raw body in order to validate the payload is coming from ordercloud
 export const config = {
+  runtime: 'edge',
   api: {
     bodyParser: false,
   },
