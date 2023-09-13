@@ -8,6 +8,7 @@ const publicUrl = getPublicUrl();
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  output: "standalone",
   // Set assetPrefix to our public URL
   assetPrefix: publicUrl,
 
